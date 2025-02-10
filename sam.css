@@ -1,0 +1,224 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header et navigation */
+header {
+    background-color: brown;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar img {
+    margin-right: 20px;
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Titres */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Sections produits */
+#produitshomme, #produitsFemmes {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cartes produits */
+.grouper, .grouper2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.produit, .produit2 {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produit img, .produit2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produit h3, .produit2 h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.produit p, .produit2 p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Boutons */
+button.ajouter-panier {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.ajouter-panier:hover {
+    background-color: #0056b3;
+}
+
+/* Contrôles de quantité */
+.produit div, .produit2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.produit i, .produit2 i {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.produit .quantity, .produit2 .quantity {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Prix total */
+.prixTotal {
+    text-align: right;
+    margin: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.totalPrix {
+    color: #555;
+}
+
+.total {
+    color: #007bff;
+}
+
+/* Footer général */
+footer {
+    background-color: #343a40; /* Couleur de fond sombre */
+    color: #ffffff;           /* Couleur du texte en blanc */
+    padding: 40px 0;          /* Espacement autour du contenu */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Titres du footer */
+  footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Ligne sous les titres */
+  footer h5::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f8c146; /* Couleur or/jaune pour un contraste élégant */
+    margin: 10px 0;
+  }
+  
+  /* Paragraphes et texte */
+  footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Liens utiles */
+  footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+
+  .descrip {
+    font-size: large;
+    text-align: center;
+  }
+  
+  footer a:hover {
+    color: #f8c146; /* Changement de couleur au survol */
+    text-decoration: underline;
+  }
+  
+  /* Icônes des réseaux sociaux */
+  footer i {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  footer i:hover {
+    color: #f8c146;   /* Couleur des icônes au survol */
+    transform: scale(1.2); /* Légère augmentation de la taille au survol */
+  }
+  
+  /* Copyright */
+  footer .bg-secondary {
+    background-color: #23272b !important; /* Légèrement plus sombre pour la section du bas */
+    color: #bbbbbb;
+    font-size: 0.8rem;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+  
+  /* Responsive pour petits écrans */
+  @media (max-width: 768px) {
+    footer h5 {
+      font-size: 1.1rem;
+    }
+  
+    footer p, footer a {
+      font-size: 0.85rem;
+    }
+  
+    footer i {
+      font-size: 1.3rem;
+    }
+  }
+  
