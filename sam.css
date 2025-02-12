@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: white;
 }
 
 /* Header et navigation */
@@ -11,6 +11,7 @@ header {
     background-color: brown;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    
 }
 
 .navbar img {
@@ -33,20 +34,53 @@ h1, h2 {
     text-align: center;
     color: #333;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5em;
+  position: sticky;
+  top: 0;
+  background-color: #bbbbbb;
+  z-index: 1000;
+  font-size: 2.5em;
+  color: rgb(155, 28, 11);
+  
+    
+}
+.titre-typewriter{
+  font-size: 2rem;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+} 
+
+.partieH {
+  background-color: #e2e9f3;
+  border-radius: 10px;
+}
+
+.partieF {
+  background-color: rgb(247, 236, 247);
+  border-radius: 10px;
 }
 
 h2 {
     font-size: 2em;
 }
+.descrip {
+     font-size: large;
+     color: #f8c146;
+}
 
 /* Sections produits */
 #produitshomme, #produitsFemmes {
     padding: 20px;
-    background-color: #ffffff;
+    background-color: white;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -58,6 +92,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    
 }
 
 .produit, .produit2 {
@@ -67,6 +102,14 @@ h2 {
     text-align: center;
     width: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease
+}
+
+ .produit2:hover{
+    transform: scale(1.1);
+}
+.produit:hover{
+  transform: scale(1.1);
 }
 
 .produit img, .produit2 img {

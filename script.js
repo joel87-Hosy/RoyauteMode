@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.ajouter-panier');
     const totalDisplays = document.querySelectorAll('.total');
-  
+
+    //  evenement du bouton ajouter au panier
+    
     buttons.forEach(button => {
       button.addEventListener('click', (event) => {
         const productElement = event.target.closest('.produit, .produit2');
@@ -18,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const plusIcons = document.querySelectorAll('.fa-plus-circle');
     const minusIcons = document.querySelectorAll('.fa-minus-circle');
-  
+    
+    // /evenement du bouton plus
+
     plusIcons.forEach(icon => {
       icon.addEventListener('click', (event) => {
         const quantityElement = event.target.parentElement.querySelector('.quantity');
@@ -28,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTotal();
       });
     });
-  
+    // evenement du bouton moins
     minusIcons.forEach(icon => {
       icon.addEventListener('click', (event) => {
         const quantityElement = event.target.parentElement.querySelector('.quantity');
